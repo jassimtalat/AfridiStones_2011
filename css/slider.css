@@ -1,0 +1,55 @@
+#slides {	z-index:5000;}
+.slides_container {
+	width:940px;
+	overflow:hidden;
+	position:relative;
+	display:none;}
+.slides_container .slide1,.slides_container .slide2,.slides_container .slide3,.slides_container .slide4,.slides_container .slide5,.slides_container .slide6, 
+.slides_container .slideabout1,.slides_container .slideabout2,.slides_container .slideabout3,.slides_container .slideabout4,.slides_container .slideabout5,.slides_container .slideabout6
+{
+	width:940px; 
+	height:480px;
+	display:block;}
+.slides_container .slide1{background:url(../images/banner-img-01.jpg) no-repeat; }
+.slides_container .slide2{background:url(../images/banner-img-02.jpg) no-repeat; }
+.slides_container .slide3{background:url(../images/banner-img-03.jpg) no-repeat; }
+.slides_container .slide4{background:url(../images/banner-img-04.jpg) no-repeat; }
+.slides_container .slide5{background:url(../images/banner-img-05.jpg) no-repeat; }
+
+.slides_container .slideabout1{background:url(../images/bannerabout-img-01.jpg) no-repeat; }
+.slides_container .slideabout2{background:url(../images/bannerabout-img-02.jpg) no-repeat; }
+.slides_container .slideabout3{background:url(../images/bannerabout-img-03.jpg) no-repeat; }
+.slides_container .slideabout4{background:url(../images/bannerabout-img-04.jpg) no-repeat; }
+.slides_container .slideabout5{background:url(../images/bannerabout-img-05.jpg) no-repeat; }
+
+.prev { float:left;
+	width: 36px;
+	margin-top: -250px;
+	display:block;
+	height: 30px;
+	position:relative;
+	left: -25px;}
+.next { 
+position: relative;
+float: right;
+	width: 36px;
+	margin-top: -250px;
+	left:50px;
+	display:block;
+	height: 30px;}
+
+/*bottom dots navigation*/
+.pagination {	position: relative; top: -50px; left: 930px; 
+	width: 80px; height: 20px; background: url(../images/dotsbg.png) no-repeat; z-index: 100; padding:3px 0 0 7px; }
+pagination li {	float:left;
+	padding: 0 10px;
+	list-style:none;	}
+.pagination li a {	width:12px;
+	height:0;
+	padding-top:12px;
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+	margin-left: 5px;}
+.pagination li.current a {	background-position:0 -12px;}
+#slides .link {	display:block;	margin-top:10px;	font-weight:800;}

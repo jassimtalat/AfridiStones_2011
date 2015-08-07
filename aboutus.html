@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AFRIDI STONES</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/slider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="css/slides.min.jquery.js"></script>
+    <script>
+		$(function(){
+			// Set starting slide to 1
+			var startSlide = 1;
+			// Get slide number if it exists
+			if (window.location.hash) {
+				startSlide = window.location.hash.replace('#','');
+			}
+			// Initialize Slides
+			$('#slides').slides({
+				preload: true,
+				preloadImage: '',
+				generatePagination: true,
+				play: 5000,
+				pause: 2500,
+				effect: 'fade',
+				crossfade : true,
+				hoverPause: false,
+				// Get the starting slide
+				start: startSlide,
+				animationComplete: function(current){
+					// Set the slide number as a hash
+					//window.location.hash = '#' + current;
+				}
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+
+<div id="wrapper-about">
+
+ <div id="header-container">
+  <div id="header">
+          
+    <div class="navigation">
+      <div class="nav-left">
+        <ul>
+        	<li><a href="home.html">HOME</a></li><li><a href="stonesgallery.html">STONES GALLERY</a></li>
+        </ul>
+      </div>
+      
+      <div class="nav-right">
+        <ul>
+        	<li><a href="aboutus.html">ABOUT US</a></li><li><a href="contactus.php">CONTACT US</a></li>
+        </ul>
+      </div>
+    <div class="clearfloat"></div>
+    </div><!--end navigation-->
+    
+  </div><!--end header-->
+ </div><!--end header-container-->
+      
+  <div id="content" style="background: #fff url(images/aboutus-content-bg.jpg) bottom right no-repeat; ">
+  <!--
+  	<div id="banner">
+      <div id="slides">
+        <div class="slides_container">
+        
+          <div class="slideabout1">
+          </div>
+          
+          <div class="slideabout2">
+          </div>
+          
+          <div class="slideabout3">
+          </div>
+          
+          <div class="slideabout4">
+          </div>         
+          
+          <div class="slideabout5">
+          </div>
+               
+        </div>
+        <a href="javascript:void(0)" class="prev"><img src="images/back.png" alt="Prev"></a>
+        <a href="javascript:void(0)" class="next"><img src="images/next.png" alt="Next"></a>
+    </div>
+    </div>
+    
+    -->
+    
+    <center>
+      <br />
+      <img src="images/as-splash.jpg" width="800" height="415" />
+    </center>
+  
+    <div class="content-container" >
+      <h1><img src="images/icon-aboutus.jpg"  alt=" " style="margin: 0 10px -5px 0;" />ABOUT AFRIDI STONES</h1>
+      <div class="bar"></div><br />      
+      <p>Afridi Stones is a solely family based business providing quality personalised services and conducting business throughout the Asian and Gulf region. For the rst time in Australia, we are introducing diverse range of stones that are not available in the current market.</p><br />
+
+	<p>With over 10 years of industry experience, we have breadth of knowledge and skill with a great customer service, and ability to deliver.
+Working with owners, architects, designers, builders and tradesmen, we understand the importance of meeting specications, standards,
+budgets and deadlines.</p><br />
+
+	<p>We operate as an importer and distributor of natural stones providing the architectural and building industry with an alternate source that is clearly focused on delivering enhanced results and value for all stakeholders. Browse our gallery on-line or call us now for expert advice.</p><br />
+
+      <div class="bt" style="width:200px;"><a href="contactus.php">Contact Us Here</a></div>
+      <p style="height:50px;"></p>
+    <div class="clearfloat"></div>
+    
+    </div><!--end content container-->
+  
+  </div><!--end content-->
+  
+  
+  <div id="footer">
+  <div class="footer-container">
+    <div class="copyright">COPYRIGHT 2011 - AFRIDI STONES</div>
+    
+    <div class="footer-navigation">
+      <ul>
+        	<li><a href="home.html">HOME</a></li><li><a href="stonesgallery.html">STONES GALLERY</a></li>
+        	<li><a href="aboutus.html">ABOUT US</a></li><li><a href="contactus.php">CONTACT US</a></li>
+      </ul>
+    </div><!--end footer-navigation-->
+  </div><!--end footer container-->
+  <div class="clearfloat"></div>
+  </div><!--end footer-->
+
+</div><!--end wrapper-->
+
+</body>
+</html>
